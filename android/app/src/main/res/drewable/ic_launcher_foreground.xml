@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App launcher foreground — white "A" lettermark on transparent background.
+  Used by: adaptive icon (API 26+) and Android 12+ native splash screen icon.
+  Safe zone: content should stay within the inner 72dp of the 108dp canvas.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- White "A" lettermark centred in the safe zone -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26 L38,82 L46,82 L50,68 L58,68 L62,82 L70,82 Z M54,36 L60,62 L48,62 Z" />
+
+</vector>

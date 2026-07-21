@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android status-bar notification icon.
+  Rules: must be white (#FFFFFF) with a transparent background.
+  Size: 24 × 24 dp viewport (standard notification icon size).
+  Shape: simple dumbbell / fitness icon representing the workout app.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Dumbbell bar (horizontal center rod) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,11 H17 V13 H7 Z" />
+
+    <!-- Left outer weight plate -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M3,9 H6 V15 H3 Z" />
+
+    <!-- Left inner collar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6,10 H8 V14 H6 Z" />
+
+    <!-- Right inner collar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,10 H18 V14 H16 Z" />
+
+    <!-- Right outer weight plate -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,9 H21 V15 H18 Z" />
+
+</vector>
