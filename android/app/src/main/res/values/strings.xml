@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AmoledFit</string>
+    <string name="title_activity_main">AmoledFit</string>
+    <string name="package_name">com.amoledfit.workout</string>
+    <string name="custom_url_scheme">com.amoledfit.workout</string>
+</resources>
