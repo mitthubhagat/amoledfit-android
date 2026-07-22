@@ -14,9 +14,11 @@ workflows:
           npm install
 
       - name: Build web app
-        script: |
-          npx tsc -p tsconfig.json --noEmit
-          npx vite build
+  script: |
+    npm ls typescript
+    npm ls vite
+    npm ls @vitejs/plugin-react
+    npm run build
 
       - name: Sync Capacitor
         script: |
