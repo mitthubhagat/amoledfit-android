@@ -3,13 +3,15 @@ workflows:
     name: Android Debug APK
 
     environment:
-      node: 20
+      node: 28
       java: 17
 
     scripts:
       - name: Install dependencies
-        script: |
-          npm ci
+  script: |
+    npm cache clean --force
+    rm -rf node_modules
+    npm install
 
       - name: Build web app
         script: |
