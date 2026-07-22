@@ -1,0 +1,33 @@
+workflows:
+  android-debug:
+    name: Android Debug APK
+
+    environment:
+      node: 20
+      java: 17
+
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install
+
+      - name: Build web app
+        script: |
+          npm run build
+
+      - name: Sync Capacitor
+        script: |
+          npx cap sync android
+
+      - name: Build Debug APK
+        script: |
+          cd android
+          ./gradlew assembleDebug
+
+    artifacts:
+      - android/app/build/outputs/**/*.apk
+
+    cache:
+      cache_paths:
+        - ~/.npm
+        - ~/.gradle
