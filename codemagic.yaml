@@ -8,10 +8,10 @@ workflows:
 
     scripts:
       - name: Install dependencies
-  script: |
-    npm cache clean --force
-    rm -rf node_modules
-    npm install
+        script: |
+          npm cache clean --force
+          rm -rf node_modules
+          npm install
 
       - name: Build web app
         script: |
