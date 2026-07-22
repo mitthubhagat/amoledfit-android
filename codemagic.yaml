@@ -9,25 +9,22 @@ workflows:
     scripts:
       - name: Install dependencies
         script: |
-          npm install
+          npm ci
 
       - name: Build web app
         script: |
-          npm run build
+          npx tsc -p tsconfig.json --noEmit
+          npx vite build
 
       - name: Sync Capacitor
         script: |
           npx cap sync android
 
-      - name: Build Debug APK
+      - name: Build APK
         script: |
           cd android
+          chmod +x gradlew
           ./gradlew assembleDebug
 
     artifacts:
-      - android/app/build/outputs/**/*.apk
-
-    cache:
-      cache_paths:
-        - ~/.npm
-        - ~/.gradle
+      - android/app/build/outputs/apk/debug/*.apk
